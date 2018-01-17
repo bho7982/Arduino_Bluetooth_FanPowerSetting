@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.re.Dev.BluetoothEcho"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Bluetooth Fan Controller"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="kr.re.Dev.ArduinoEcho.MainActivity"
+            android:configChanges="screenSize|orientation|keyboard"
+            android:label="Bluetooth Fan Controller"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="kr.re.Dev.ArduinoEcho.SettingFanPower" />
+        <activity
+            android:name="kr.re.Dev.Bluetooth.BluetoothSerialClient$BluetoothUpActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

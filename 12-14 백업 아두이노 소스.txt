@@ -1,0 +1,103 @@
+#include <SoftwareSerial.h>
+#include <stdio.h>
+#define rxPin 3 
+#define txPin 2 
+#define BUFF_SIZE 1024
+
+SoftwareSerial BTSerial(txPin, rxPin);
+
+#include <DHT11.h> 
+int pin=4;    // DHT11 temperature sensor
+DHT11 dht11(pin); 
+
+
+String temp2;
+String humi2;
+String HumanDetectVal;
+String DoorOCVal;
+
+int HumanDetectPin = 5; // 센서 시그널핀
+int pirState = LOW; // PIR 초기상태
+int Humanval = 0; // Signal 입력값
+
+int MagDoorPin = 6;
+int Doorval = 0;
+
+// 데이터 버퍼
+byte buffer[BUFF_SIZE];
+byte index;
+byte data;
+
+char SendTemp[50];
+char SendHumi[50];
+
+char TempPlusHumi[50];
+
+void setup() {
+  pinMode(HumanDetectPin, INPUT); // 센서 Input 설정
+  pinMode(MagDoorPin,INPUT);
+  BTSerial.begin(9600);
+  Serial.begin(9600);
+  index = 0;
+  
+}
+
+void loop() {
+  Humanval = digitalRead(HumanDetectPin); 
+  if (Humanval == HIGH){
+     HumanDetectVal = "1";
+    }
+    else
+    {
+      HumanDetectVal = "0";
+      }
+
+  Doorval = digitalRead(MagDoorPin);
+  if(Doorval == HIGH)
+  {
+    DoorOCVal = "1";
+    }
+    else
+    {
+      DoorOCVal = "0";
+      }
+      
+  int err;
+  float temp, humi;
+  if((err=dht11.read(humi, temp))==0)
+  {
+    
+    dtostrf(temp, 4, 2,SendTemp);
+    dtostrf(humi, 4, 2,SendHumi);
+
+    temp2 = SendTemp;
+    humi2 = SendHumi;
+
+    String result = temp2+","+humi2+","+HumanDetectVal+","+DoorOCVal;
+    Serial.print(result);
+    Serial.println();
+
+    for(int i = 0; i < result.length(); i ++)
+    {
+      TempPlusHumi[i] = result.charAt(i);
+      }
+    
+    TempPlusHumi[result.length()] = '\0';
+    
+    /*
+    for(uint8_t j = 0; j <= temp2.length(); ++j) {
+      BTSerial.print(SendTemp[j]);
+    }
+    for(uint8_t j = 0; j <= humi2.length(); ++j) {
+      BTSerial.print(SendHumi[j]);
+    }
+    */
+    for(uint8_t j = 0; j <= result.length(); ++j) {
+      BTSerial.print(TempPlusHumi[j]);
+    }
+    delay(500);
+  }
+  else
+  {
+  }
+}

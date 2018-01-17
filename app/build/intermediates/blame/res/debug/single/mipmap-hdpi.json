@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.16\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\DDil\\Desktop\\12.16\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.17\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\DDil\\Desktop\\12.17\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    }
+]

@@ -1,0 +1,251 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.re.Dev.ArduinoEcho.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="[온/습도 정보]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="온도 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+                <TextView
+                    android:text="00.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+                <TextView
+                    android:text="도 / "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+                <TextView
+                    android:text="습도 : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+                <TextView
+                    android:text="00.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+                <TextView
+                    android:text="%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:text="[화장실 정보]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView22"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <TextView
+                android:text="화장실에 사람이 없습니다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <TextView
+                android:text="화장실 문이 열려있습니다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:text="[현재 환풍기 파워]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="화장실의 환풍기 파워는"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+                <TextView
+                    android:text="입니다."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:text="[환풍기 설정 변경]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="습도가"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/sendText1"
+                    android:layout_width="155dp" />
+
+                <TextView
+                    android:text="이상일때"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/sendText2"
+                    android:layout_width="155dp" />
+
+                <TextView
+                    android:text="의 파워로 돈다."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView18"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            </LinearLayout>
+
+            <Button
+                android:text="설정 전송"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSend2"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTerminal"
+            android:layout_width="fill_parent"
+            android:layout_height="104dp"
+            android:background="#fdfdff"
+            android:scrollbars="vertical"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/buttonSend"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="전송" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

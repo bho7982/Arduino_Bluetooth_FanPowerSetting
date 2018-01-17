@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\DDil\Desktop\12.17\app\src\main\assets"><file name="HC_06_Echo.txt" path="C:\Users\DDil\Desktop\12.17\app\src\main\assets\HC_06_Echo.txt"/></source><source path="C:\Users\DDil\Desktop\12.17\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\DDil\Desktop\12.17\app\src\debug\assets"/></dataSet></merger>

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.16\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_device.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\12.16\\app\\src\\main\\res\\layout\\item_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.17\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_device.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\12.17\\app\\src\\main\\res\\layout\\item_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_device.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\src\\main\\res\\layout\\item_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.16\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting_fan_power.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\12.16\\app\\src\\main\\res\\layout\\setting_fan_power.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting_fan_power.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\HC-06_Arduino_Echo-master2\\app\\src\\main\\res\\layout\\setting_fan_power.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.17\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting_fan_power.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\12.17\\app\\src\\main\\res\\layout\\setting_fan_power.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.17\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\12.17\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\DDil\\Desktop\\12.16\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\DDil\\Desktop\\12.16\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

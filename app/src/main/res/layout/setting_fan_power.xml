@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="환풍기 설정 화면입니다"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:text="돌아가기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="습도가"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <EditText
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2" />
+
+        <TextView
+            android:text="이상일때 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:text="의 파워로 구동한다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="설정 전송하기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+</LinearLayout>
